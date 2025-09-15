@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Dream River — Index</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23135E66'/></svg>">
+<link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+  <!-- HERO (static) -->
+  <section class='dr-hero block' aria-labelledby='dr-hero-title'>
+    <div class='dr-hero-inner rail'>
+      <img class='dr-title-png' src="./Assets/Eshaan Dream River Title typography- white.png" alt='I Dream River — album title' />
+      <div class='dr-hero-card pane' role='region' aria-label='Artist Letter'>
+        <p class='dr-letter'>
+          <strong>Dear Listener,</strong><br><br>
+          Nothing warms my heart more than knowing that even in the year 2025 you decided to get this
+          CD. This album, Dream River, is one that has been in the making for 6 years. All the river's twists
+          and turns have resulted in this music. Each song on this album is a short story from diﬀerent
+          phases of my life. From the very first jazz song I wrote, Mountain Muse, to the latest Sailing
+          Through Dream River, I hope as you listen to this album you are taken on a ride. A Journey
+          through all the beautiful and not so beautiful moments in life - yours, mine, all of ours, captured
+          and turned into a sonic concoction for you to send your memories sailing like paper boats. The
+          reason this album took so long to make can be distilled to one word - belief. As the currents of the
+          river took me diﬀerent places, my self-belief felt like waves, rising high before they crashed on a
+          shore. It took all of this time to realise that these waves are the very energy that gives the water
+          movement. I hope this discovery, the joy and happiness in riding the ups and downs of life
+          brings some light and joy to your own river.<br><br>
+          Much Love,<br>
+          Eshaan
+        </p>
+      </div>
+    </div>
+    <img class='dr-boat' src="./Assets/Eshaan Dream River Boats-00-03.png" alt='' aria-hidden='true' />
+    <img class='dr-boat dr-boat2' src="./Assets/Eshaan Dream River Boats-00-04.png" alt='' aria-hidden='true' />
+  </section>
+
+  <section class="experience">
+    <div class="rail">
+      <h2 class="heading-white">Come Sail With Us</h2>
+
+      <!-- VIDEO PLAYER -->
+      <div id="dr-player" class="embed-wrapper pane">
+        <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden;background:#000;">
+          <iframe id="dr-player-iframe" title="vimeo-player" src="https://player.vimeo.com/video/1118581276?h=02eeec5948" style="position:absolute;left:0;top:0;width:100%;height:100%;" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <h2 class="heading-white">Behind the Curtain</h2>
+      <!-- Dynamic experience mount (subs/CTAs render here) -->
+      <div class="chapters-block pane">
+        <div id="experience-root" data-base-root="."></div>
+      </div>
+
+      <!-- CTA shelf handled by JS/Shadow DOM inside experience-root -->
+    </div>
+  </section>
+
+  <!-- CREDITS -->
+  <section class='dr-credits block' aria-labelledby='dr-credits-title'>
+    <div class='rail'>
+      <div class='pane'>
+        <h2 id='dr-credits-title'>Credits</h2>
+        <div class='dr-credits-text'>
+          <p>This album would not be possible without the love and support of a lot of people.</p>
+
+          <p>First and foremost, I want to thank my band. Annie Orzen on piano, Ivan Demarjian On Tenor Saxophone,, Sam Schaeffer on Drums and Brendan Nie on Bass. They gave this music a lot of love and care like a loving aunt or uncle that treats their nieces and nephews like their own kids.</p>
+
+          <p>My Family, without who I would not have the absolutely wonderful life that I do.</p>
+
+          <p>My dearest friends - Viraj, Isra, Romik, Karan, Kota, Arjun, Zoya, Cole, Misha, Aidan, Eric, Gabe, Elijah, and the others who are going to be mad at me for forgetting to include them here. You know who you are and how much I love you.</p>
+
+          <p>To the three most influential teachers I have had in my life - aman Mahajan, Bob Sneider and Dariusz Terefenko. Thank you for dealing with me.</p>
+
+          <p>To the first line up of The Sonic Alchemists, Kabir, Abhin and Dan. Thank you for all of those rehearsals through the night and helping me be a better band leader.</p>
+
+          <p>To the people that supported the crowdfunding campaign, this would not be possible without you. Shiv, Shikha,Shanta, Rhea, Savannah,Sukanya,Misha,Aidan Mandie, Ruchira, Sam, Pearl, Radhika, Meagan, Sonal, Shaleen, Anna, Riju, Gurpreet, Mahima, Zoya, Isra, Hardik, Anil, Madhvi Nandita, Renu, Naresh, Deepa, Rohan, Umesh, Kanwal, Archana, Romik, Cole, Alish. Thank you so very much.</p>
+
+          <p>A special Thanks to the Raj family, Sudhakar, Archana, Arnavi and Vihaan. May every artist have patrons as discerning and generous as you.</p>
+
+          <p>Recorded on May 12th and 13th at Bunker Studios by engineers Aaron Neveezie and Alex Conroy and Assistant engineer Jasper LEach.</p>
+          <p>Mixed and Mastered by Dave Darlington at Bass Hit Studios.</p>
+          <p>Videography and Video Editing by David Zi.</p>
+          <p>Documentary Sound Editing by Kabir Agarwal.</p>
+          <p>Gorgeous artwork by the incredible Viraj Anand.</p>
+          <p>This album is supported in part by the Institute for Music Leadership at the Eastman school with funding supported by the Paul R. Judy Centre for Innovation and Research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>window.DR_MEMORY_WALL = { apiBase: "https://script.google.com/macros/s/AKfycbzf-ApoHo3XWNyMA6-QWI1frE3fFgupIMoVPitluNpNZZwt7qGKqsfctjNt9sd28Co6/exec", limit: 100 };</script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="./js/time_driver.js" defer></script>
+  <script src="./js/subchapter_engine.js" defer></script>
+  <script src="./js/memory_wall.js" defer></script>
+  <script src="./js/cta_renderer.js?v=20250912-3" defer></script>
+  <script src="./js/listen_bar.js" defer></script>
+  <link rel="stylesheet" href="./css/lowerthirds.css"/>
+  <script src="./js/lowerthirds.js" defer></script>
+  <script src="./js/mount_experience.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "intro",
+    "title": "The Sonic Alchemists",
+    "subs": [
+      {
+        "type": "text",
+        "content": "In most jazz groups the people usually use their own name as the artist. My group in a stereotypical jazz setting would be called the Eshaan Sood Quintet or the Eshaan Sood collective or just Eshaan Sood. When I first envisioned this group I somewhere in the back of my head knew that I'm never going to have the same personnel. Peoples lives move on and jazz isn't traditionally a niche of music that has a lot of money, so people move on to doing more commercially viable forms of music. That often is the reason people don't call their group by a band name but I had always loved the idea of bands. Before this band I was in a group called Space Behind The Yellow Room. We got together and played music but we were and still are dear friends. So the band actually came into being because I wanted the music to take on that role. The dream was to write a body of work that could be moulded by whoever was in the current line up of the group and also enable travel. I wanted to be able to take the project 'The Sonic Alchemists' to different parts of the world and have it live through different musicians."
+      },
+      {
+        "type": "image",
+        "src": "./Assets/Block Images/Group Image - Casual.jpg",
+        "alt": "Group Image — Casual"
+      },
+      {
+        "type": "text",
+        "content": "Over the years I've had the good fortune of playing my music with a lot of amazing musicians. The first ever iteration of this group had my friends Kabir Agarwal on Bass, Abhin Iype on Piano and Dan Thomas on drums. I went off to the US to study soon after and formed the group in Rochester. Every summer when I would come back I would bring the group to life in India with different musicians. But sometime in 2022 with Annie Ivan and Sam from the current line up we started playing a lot of regular shows. This brought a new vibrancy into the music. Being able to work together and have a shared musical landscape to play within brought out facets that were only inarticulate feelings in my brain. When I met Brendan in 2024 and played a little in casual settings with him I knew I had the last piece of the puzzle."
+      }
+    ]
+  },
+  {
+    "id": "mountain-muse",
+    "title": "Mountain Muse",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/01 - Eshaan Sood - Mountain Muse.mp3",
+    "subs": [
+      { "type": "text", "content": "This is the first instrumental song I ever wrote. The initial wonky melody was written to represent how carsick I used to get as a child going to the mountains. As I grew older I found that I deeply loved the Himalayas." },
+      { "type": "text", "content": "It was hard to separate the rustic holidays I took as a student on a tight budget with the magnitude of these wonderful mountains. Life is pretty simple up there and the song for all it's quirks is pretty simple." },
+      { "type": "image", "src": "./Assets/Block Images/Mountain Muse Score.png", "alt": "Mountain Muse — Score" },
+      { "type": "text", "content": "The highlight of the song is the collective improvised section That was meant to capture the spirit of all the holidays I took." }
+    ]
+  },
+  {
+    "id": "glass-blown-acquaintances",
+    "title": "Glass Blown Acquaintances",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/02 - Eshaan Sood - Glass Blown Acquaintances.mp3",
+    "subs": [
+      { "type": "text", "content": "Life in all its fleeting glory has always been a wild ride. I've met so many wonderful people throughout my life. While some people I've now known for practically my whole life, there are some that I've known only for a season or two and some still for just mere moments." },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-14.jpg", "alt": "Studio session 14" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-13.jpg", "alt": "Studio session 13" },
+      { "type": "text", "content": "Glass Blown acquaintances is for all of those amazingly lovely people I've met throughout my life that I only got to meet briefly but in that brevity there was fire and fragility like a glass blowers furnace and the final outcome." },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-12.jpg", "alt": "Studio session 12" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-11.jpg", "alt": "Studio session 11" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-10.jpg", "alt": "Studio session 10" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-9.jpg", "alt": "Studio session 9" }
+    ]
+  },
+  {
+    "id": "miss-lightning",
+    "title": "Miss Lightning",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/03 - Eshaan Sood - Miss Lightning.mp3",
+    "subs": [
+      { "type": "text", "content": "Even writing this out, it is tough to imagine that whenever I go home my friend Bijli won't greet me anymore. Bijli was our beloved cocker spaniel and she truly was a bright bolt of lightning." },
+      { "type": "image", "src": "./Assets/Block Images/Bijli1.jpg", "alt": "Bijli 1" },
+      { "type": "image", "src": "./Assets/Block Images/Bijli2.jpg", "alt": "Bijli 2" },
+      { "type": "text", "content": "In writing this song I truly got a chance to process so much greif. and then slowly watch it turn into smiling reminiscence. From crying with my guitar in my hand as I wrote the introduction to sitting in my living room and deciding that I wouldn't let this be a sad song. And then a few months later deciding to turn the outro into a fully blown out fun section. I really miss lightning." }
+    ]
+  },
+  {
+    "id": "if-our-hearts-could-talk",
+    "title": "If Our Hearts Could Talk",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/04 - Eshaan Sood - If Our Hearts Could Talk.mp3",
+    "subs": [
+      { "type": "text", "content": "I've always spoken my mind plainly. A lot of of times my bluntness has been interpreted as rude or ill-meaning. Having heard this criticism over years and having reflected upon it deeply, I still haven't changed that fact about myself." },
+      { "type": "image", "src": "./Assets/Block Images/hearts score.png", "alt": "Hearts score" },
+      { "type": "text", "content": "In a world where we mostly communicate through screens I find that people hide what they truly mean behind more veils than ever. If our hearts could talk, you and I we would actually never really think speaking plainly is a crime because we would see each other for who we are in that moment. Life would really be simple and this song is my attempt to capture that longing and feeling, of wishing the world was a plainer place. If we understood each other on a deeper level and gave each other the benefit of the doubt maybe the world would be a happier place." },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-1.jpg", "alt": "Studio session 1" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-2.jpg", "alt": "Studio session 2" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-studio-session-3.jpg", "alt": "Studio session 3" }
+    ]
+  },
+  {
+    "id": "plea-for-forgiveness",
+    "title": "Plea For Forgiveness",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/05 - Eshaan Sood - Plea For Forgiveness.mp3",
+    "subs": [
+      { "type": "text", "content": "In 2018 right after I wrote Mountain Muse, I was in a tumultuous phase of life. Nothing was going right and I felt I had pissed off fate itself. This song was born out of trying to write an apology to fate and then realising that life doesn't really do anything for or against you." },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-contemplative-line-art.jpg", "alt": "Contemplative line art" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-intersecting-circles-blue-yellow.jpg", "alt": "Intersecting circles blue/yellow" },
+      { "type": "image", "src": "./Assets/Block Images/eshaan-portrait-332.jpg", "alt": "Portrait 332" },
+      { "type": "text", "content": "Through this song I found acceptance of my own doing in my own life's situation and was able to move on. This song tends to be more of a rock ballad than a jazz song but in terms of form - the structure of the song and the harmony - the chords, the song is jazzy enough. I feel like after I put my energy into this song it started whirling through my life helping me fix a lot of my problems." }
+    ]
+  },
+  {
+    "id": "here-for-a-good-time",
+    "title": "Here For A Good Time",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/06 - Eshaan Sood - Here For A Good Time.mp3",
+    "subs": [
+      { "type": "text", "content": "While I was in Jazz school, I sacrificed a lot of moments. 4 Diwalis, 4 birthdays 4 very long snowy sunless winters. It was all to become a better jazz musician and have a deeper relationship with music. A core thing I had forgotten in this whole process however was that I got into music because it was fun." },
+      { "type": "text", "content": "John Coltrane is a very revered figure in jazz. You might have heard of him even if you are not a jazz fan. He has a seminal album called Giant Steps that employs a very tricky set of chords." },
+      { "type": "text", "content": "So I took one of the more complicated subjects of study for Jazz musicians, Coltrane Changes from the song Giant Steps and set them to a disco beat. The idea was to create a song that presented as a fun party song but had a lot of complicated stuff happening under the hood." }
+    ]
+  },
+  {
+    "id": "hexes-and-spells",
+    "title": "Hexes & Spells",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/07 - Eshaan Sood - Hexes & Spells.mp3",
+    "subs": [
+      { "type": "text", "content": "This song is based on Raag Bhairav. While I never studied Indian Classical music formally I have vivid memories of going to Nehru Park in New Delhi as kid to hear the masters. It is a form of music that I wish I had a deeper connection to but unfortunately do not." },
+      { "type": "text", "content": "I have always been a keen listener though so when one of my guitar hero's Gilad Hekselman showed me a scale he really likes, I immediately knew it was Raag Bhairav. I wrote this song as a dedication to him." },
+      { "type": "image", "src": "./Assets/Block Images/Hexes Score.png", "alt": "Hexes score" },
+      { "type": "text", "content": "As the second section came about I wanted to pay homage to one of my favourite teachers at Eastman, Dariusz Terefenko. He is a wizard with music and thus this song was born. Hexes for Gilad Hekselman and Spells for the polish wizard Dariusz Terefenko." }
+    ]
+  },
+  {
+    "id": "sailing-through-dream-river",
+    "title": "Sailing Through Dream River",
+    "audio": "./Assets/audio/Eshaan Sood - The Sonic Alchemist I- Dream River/08 - Eshaan Sood - Sailing Through Dream River.mp3",
+    "subs": [
+      { "type": "text", "content": "This song was the last song I wrote for this album. It actually as I write this text is the last piece of music I composed. It was written with the feeling of joy and elation that this whole crazy ride, this flow through a sprinting river was something I dreamt of as a child. It was all coming true and I couldn't be happier." },
+      { "type": "image", "src": "./Assets/Block Images/dream riverinside.jpg", "alt": "Dream River inside" }
+    ]
+  },
+  {
+    "id": "thank-you",
+    "title": "Thank You",
+    "subs": [
+      { "type": "text", "content": "If you are reading this you've not only bought the album, you've heard the whole thing and seen this whole documentary. By the time you've read this I've recorded the album -duh- gone on my first ever tour and hopefully have found a job in New York. haha" },
+      { "type": "text", "content": "So from the bottom of my heart, thank you so very much for all the love and support. Whether you were part of the pre order campaign or bought this CD while we were on tour or somehow got access to this page, thank you." },
+      { "type": "text", "content": "Until our rivers intersect again,\nMuch love,\nEshaan." }
+    ]
+  }
+]

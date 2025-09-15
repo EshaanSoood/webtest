@@ -1,0 +1,68 @@
+<section class="memory-cta" aria-labelledby="memory-wall-title">
+  <style>
+    :host, :root { --panel: var(--panel, rgba(255,255,255,0.75)); --border-ink: var(--border-ink, rgba(67,61,65,0.25)); --shadow-1: var(--elevation-1, 0 2px 6px rgba(67,61,65,0.15)); }
+    .sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
+    .memory-cta { box-sizing: border-box; background: var(--panel); border: 1.5px solid var(--border-ink); border-radius: 12px; box-shadow: var(--shadow-1); padding: 16px; }
+    .memory-controls { display: flex; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .memory-primary { appearance: none; border: 0; border-radius: 999px; padding: 8px 14px; font-weight: 700; cursor: pointer; background: var(--aqua, #2AA7B5); color: #fff; }
+    .memory-primary:hover { background: var(--aqua-700, #1D7C87); }
+    .memory-anim-toggle { appearance: none; border: 1px solid var(--border-ink); background: transparent; color: inherit; padding: 6px 10px; border-radius: 999px; cursor: pointer; }
+    .memory-wall { position: relative; min-height: 200px; font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; }
+    .memory-list { position: relative; list-style: none; padding: 0; margin: 0; }
+    .memory-card { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(0.9); opacity: 0.35; max-width: 42ch; text-align: center; transition: transform 700ms ease, opacity 700ms ease; will-change: transform, opacity; }
+    .memory-card.is-focus { transform: translate(-50%, -50%) scale(1.12); opacity: 1; }
+    .memory-quote { font-size: 1.2rem; line-height: 1.5; margin: 0 0 8px 0; font-weight: 700; }
+    .memory-name { margin: 0; font-size: 0.95rem; }
+    .memory-city { margin: 2px 0 0 0; font-size: 0.85rem; font-style: italic; }
+    @media (prefers-reduced-motion: reduce) {
+      .memory-card { position: static; transform: none !important; opacity: 1 !important; margin: 10px 0; text-align: left; }
+      .memory-list { display: block; }
+    }
+    .memory-form { display: grid; gap: 10px; margin-top: 8px; }
+    .memory-form[hidden] { display: none; }
+    .memory-form input, .memory-form textarea { font: inherit; padding: 8px; border-radius: 8px; border: 1px solid var(--border-ink); background: rgba(255,255,255,0.86); }
+    .memory-actions { display: flex; gap: 8px; }
+    .btn-secondary { appearance: none; border: 1px solid var(--border-ink); background: transparent; color: inherit; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+    .error { margin-top: 8px; color: #111; background: rgba(233, 232, 232, 0.86); border: 1px solid var(--border-ink); padding: 8px; border-radius: 8px; }
+  </style>
+
+  <h3 id="memory-wall-title" class="sr-only">Happy Memory Wall</h3>
+  <div class="memory-controls">
+    <button class="memory-primary" type="button">Leave your own</button>
+    <button class="memory-anim-toggle" type="button" aria-pressed="false" aria-label="Pause animations">Pause</button>
+  </div>
+  <div class="memory-wall" role="region" aria-labelledby="memory-wall-title">
+    <ul class="memory-list" aria-live="off"></ul>
+    <div class="memory-empty sr-only" aria-live="polite"></div>
+  </div>
+  <form class="memory-form" hidden>
+    <label>
+      <span class="sr-only">Your name</span>
+      <input name="name" type="text" placeholder="Your name" required />
+    </label>
+    <label>
+      <span class="sr-only">Your city</span>
+      <input name="city" type="text" placeholder="Your city" required />
+    </label>
+    <label>
+      <span class="sr-only">Your memory</span>
+      <textarea name="message" rows="3" placeholder="Share a happy memory" required></textarea>
+    </label>
+    <div class="memory-actions">
+      <button class="memory-submit memory-primary" type="submit">Submit</button>
+      <button class="btn-secondary memory-cancel" type="button">Cancel</button>
+    </div>
+    <div class="error" hidden></div>
+  </form>
+  <div class="memory-live sr-only" aria-live="polite"></div>
+</section>
+<div class="cta-card">
+  <h4 class="cta-heading">Leave Us A Happy Memory</h4>
+  <form class="hm-form" onsubmit="return false;">
+    <input name="name" placeholder="Name" required>
+    <input name="city" placeholder="City" required>
+    <textarea name="message" placeholder="Your memory" maxlength="280" required></textarea>
+    <button type="submit" class="cta-btn">Post Memory</button>
+  </form>
+  <div class="hm-wall">(Messages will flow here once connected)</div>
+</div>

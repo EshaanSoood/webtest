@@ -1,0 +1,53 @@
+[
+  { "at": "00:00", "chapter": "intro/text-1" },
+  { "at": "01:00", "chapter": "intro/image-1" },
+  { "at": "01:30", "chapter": "intro/text-2" },
+
+  { "at": "02:30", "chapter": "mountain-muse/text-1" },
+  { "at": "03:40", "chapter": "mountain-muse/text-2" },
+  { "at": "04:50", "chapter": "mountain-muse/image-1" },
+  { "at": "05:30", "chapter": "mountain-muse/text-3" },
+
+  { "at": "06:40", "chapter": "glass-blown-acquaintances/text-1" },
+  { "at": "07:50", "chapter": "glass-blown-acquaintances/image-1" },
+  { "at": "08:13", "chapter": "glass-blown-acquaintances/image-2" },
+  { "at": "08:36", "chapter": "glass-blown-acquaintances/text-2" },
+  { "at": "09:46", "chapter": "glass-blown-acquaintances/image-3" },
+  { "at": "10:09", "chapter": "glass-blown-acquaintances/image-4" },
+  { "at": "10:32", "chapter": "glass-blown-acquaintances/image-5" },
+  { "at": "10:55", "chapter": "glass-blown-acquaintances/image-6" },
+
+  { "at": "11:20", "chapter": "miss-lightning/text-1" },
+  { "at": "12:30", "chapter": "miss-lightning/image-1" },
+  { "at": "13:20", "chapter": "miss-lightning/image-2" },
+  { "at": "14:10", "chapter": "miss-lightning/text-2" },
+
+  { "at": "15:20", "chapter": "if-our-hearts-could-talk/text-1" },
+  { "at": "17:35", "chapter": "if-our-hearts-could-talk/image-1" },
+  { "at": "18:28", "chapter": "if-our-hearts-could-talk/text-2" },
+  { "at": "20:43", "chapter": "if-our-hearts-could-talk/image-2" },
+  { "at": "21:36", "chapter": "if-our-hearts-could-talk/image-3" },
+  { "at": "22:29", "chapter": "if-our-hearts-could-talk/image-4" },
+
+  { "at": "23:20", "chapter": "plea-for-forgiveness/text-1" },
+  { "at": "24:35", "chapter": "plea-for-forgiveness/image-1" },
+  { "at": "25:02", "chapter": "plea-for-forgiveness/image-2" },
+  { "at": "25:29", "chapter": "plea-for-forgiveness/image-3" },
+  { "at": "25:56", "chapter": "plea-for-forgiveness/text-2" },
+
+  { "at": "27:10", "chapter": "here-for-a-good-time/text-1" },
+  { "at": "29:00", "chapter": "here-for-a-good-time/text-2" },
+  { "at": "30:50", "chapter": "here-for-a-good-time/text-3" },
+
+  { "at": "32:40", "chapter": "hexes-and-spells/text-1" },
+  { "at": "33:40", "chapter": "hexes-and-spells/text-2" },
+  { "at": "34:40", "chapter": "hexes-and-spells/image-1" },
+  { "at": "35:00", "chapter": "hexes-and-spells/text-3" },
+
+  { "at": "36:00", "chapter": "sailing-through-dream-river/text-1" },
+  { "at": "37:15", "chapter": "sailing-through-dream-river/image-1" },
+
+  { "at": "37:45", "chapter": "thank-you/text-1" },
+  { "at": "38:45", "chapter": "thank-you/text-2" },
+  { "at": "39:45", "chapter": "thank-you/text-3" }
+]
