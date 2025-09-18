@@ -467,3 +467,136 @@ html, body {
 .dr-boat2 {
   right: 2rem;
 }
+
+/* ===== Dream River Header, Modal, and Footer (custom) ===== */
+
+:root {
+  --aqua: #2AA7B5;
+  --teal-ink: #135E66;
+  --header-height: 44px;
+}
+
+/* Fixed thin header */
+.dr-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(19, 94, 102, 0.85);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.dr-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.dr-header a:hover { text-decoration: underline; }
+
+/* Offset page content for fixed header */
+body { padding-top: var(--header-height); }
+
+/* Override sticky heading to account for header height */
+.chapters-block .chapter.active > h1:first-of-type,
+.chapters-block .chapter.active > h2:first-of-type,
+.chapters-block .chapter.active > h3:first-of-type,
+.chapters-block .chapter.active > .chapter-title:first-of-type,
+#experience-root .chapter.active > h1:first-of-type,
+#experience-root .chapter.active > h2:first-of-type,
+#experience-root .chapter.active > h3:first-of-type,
+#experience-root .chapter.active > .chapter-title:first-of-type {
+  top: var(--header-height);
+}
+
+/* Confirm modal */
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+.confirm-overlay[aria-hidden="false"] { display: flex; }
+.confirm-modal {
+  background: var(--pane-bg);
+  color: #111;
+  border: 1.5px solid var(--pane-border);
+  border-radius: var(--pane-radius);
+  box-shadow: var(--pane-shadow);
+  padding: 16px;
+  max-width: 520px;
+  width: calc(100% - 32px);
+}
+.confirm-modal h3 { margin: 0 0 8px 0; color: #111; font-family: "the-seasons", sans-serif; }
+.confirm-modal p { margin: 0 0 16px 0; }
+.confirm-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.btn { appearance: none; border: 0; border-radius: 8px; padding: 10px 14px; font-weight: 700; cursor: pointer; }
+.btn-primary { background: var(--aqua); color: #fff; }
+.btn-primary:hover { background: #1D7C87; }
+.btn-secondary { background: #e6e6e6; color: #111; }
+.btn-secondary:hover { background: #d8d8d8; }
+
+/* Footer */
+.dr-footer { margin-top: 24px; }
+.dr-footer .pane { display: grid; gap: 16px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.footer-links a { color: var(--teal-ink); font-weight: 700; text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; }
+.social-links { display: flex; gap: 12px; }
+.social-links a { color: var(--teal-ink); display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 999px; background: rgba(255,255,255,0.85); border: 1px solid var(--pane-border); }
+.social-links a:hover { background: rgba(255,255,255,1); }
+
+/* Sticky footer at viewport bottom */
+body { display: flex; flex-direction: column; min-height: 100vh; }
+.dr-footer { margin-top: auto; padding-top: 24px; }
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .rail { padding-left: 12px; padding-right: 12px; }
+  .pane { padding: 12px; border-radius: 10px; }
+  .block { margin: 8px 0; }
+
+  .dr-title-png { margin: 10rem auto 2rem auto; max-width: 88%; }
+  .dr-hero-card { max-width: 100%; margin-top: 2rem; }
+  .dr-boat { max-width: 160px; top: 70%; }
+  .dr-boat:first-of-type { left: 0.5rem; }
+  .dr-boat2 { right: 0.5rem; }
+
+  .embed-wrapper { padding: 8px; }
+  .listen-bar { flex-wrap: wrap; gap: 8px; }
+  .listen-bar-btn { padding: 8px 12px; }
+
+  .chapters-block .chapter.active > h1:first-of-type,
+  .chapters-block .chapter.active > h2:first-of-type,
+  .chapters-block .chapter.active > h3:first-of-type,
+  .chapters-block .chapter.active > .chapter-title:first-of-type,
+  #experience-root .chapter.active > h1:first-of-type,
+  #experience-root .chapter.active > h2:first-of-type,
+  #experience-root .chapter.active > h3:first-of-type,
+  #experience-root .chapter.active > .chapter-title:first-of-type {
+    padding: 6px 8px;
+  }
+
+  .dr-header { height: 40px; }
+  :root { --header-height: 40px; }
+
+  .footer-links { gap: 10px; }
+  .social-links a { width: 32px; height: 32px; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+  .dr-credits .pane, .dr-hero-card { padding: 12px; }
+  .dr-title-png { margin-top: 8rem; }
+}
