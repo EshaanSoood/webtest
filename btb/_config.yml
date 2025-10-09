@@ -2,6 +2,8 @@ title: Behind The Beat
 description: Heartfelt Reviews & Introspective Interviews.
 url: ""
 baseurl: ""
+# GitHub Pages will set the correct baseurl at build time if using Pages.
+# Ensure all links use relative_url filter in Liquid where applicable.
 permalink: pretty
 markdown: kramdown
 
