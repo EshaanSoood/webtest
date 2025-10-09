@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="hidden md:flex items-center gap-[var(--nav-spacing)] py-2 px-3 text-purple-darkest">
+    <a href="{{ '/' | relative_url }}" class="flex items-center" aria-label="Home">
+      <img src="{{ '/assets/images/btb-logo-clean.png' | relative_url }}" alt="{{ site.title }}" class="h-[var(--nav-height)] w-auto" />
+    </a>
+    <nav aria-label="Primary" class="nav-row flex items-center gap-[var(--nav-spacing)]">
+      <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} is-active{% endif %}" style="--item-skew: var(--nav-skew-1);">Home</a>
+      <a href="{{ '/mission/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-2);">Mission</a>
+      <a href="{{ '/reviews/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-3);">Reviews</a>
+      <a href="{{ '/podcasts/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-4);">Podcasts</a>
+      <a href="{{ '/contact/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-5);">Contact</a>
+      <a href="#" class="btn-trapezoid">Subscribe</a>
+    </nav>
+  </div>
+  <div class="md:hidden py-2 px-3 text-purple-darkest">
+    <div class="flex items-center">
+      <a href="{{ '/' | relative_url }}" class="flex items-center" aria-label="Home">
+        <img src="{{ '/assets/images/btb-logo-clean.png' | relative_url }}" alt="{{ site.title }}" class="h-[var(--nav-mobile-height)] w-auto" />
+      </a>
+    </div>
+    <nav aria-label="Primary" class="nav-col flex flex-col gap-[var(--nav-spacing-mobile)] mt-2">
+      <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} is-active{% endif %}" style="--item-skew: var(--nav-skew-1);">Home</a>
+      <a href="{{ '/mission/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-2);">Mission</a>
+      <a href="{{ '/reviews/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-3);">Reviews</a>
+      <a href="{{ '/podcasts/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-4);">Podcasts</a>
+      <a href="{{ '/contact/' | relative_url }}" class="nav-link" style="--item-skew: var(--nav-skew-5);">Contact</a>
+    </nav>
+  </div>
+</header>
+

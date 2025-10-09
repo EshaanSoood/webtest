@@ -1,0 +1,138 @@
+/* Post grid: force 2 columns on md and up */
+@media (min-width: 768px) {
+	.post-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+}
+
+/* Widen nav active trapezoid underline on desktop */
+@media (min-width: 1024px) {
+	.nav-link.is-active::after {
+		width: 80% !important; /* was var(--nav-trapezoid-w) ~70% */
+	}
+}
+
+/* Image frames: small/medium/large, rectangle and square
+   - Adaptive to portrait/landscape via object-fit: contain
+   - Chamfered corners (light angle), straight edges in purple, chamfers accented pink
+   Usage:
+     <figure class="img-frame img-rect-m"><img class="img-media" src="..." alt="..." /></figure>
+     <figure class="img-frame img-square-s">...</figure>
+*/
+.img-frame {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	/* Images should touch the frame (no inner padding) */
+	padding: 0;
+	/* External spacing so surrounding text never crowds the border */
+	margin: 0.75rem 0 1rem;
+	--b: 3px; /* border thickness */
+	--c: 8px; /* chamfer size - keep light */
+	--edge: var(--color-purple-dark, #a295b5);
+	--chamfer: var(--color-pink-light, #e8c3d6);
+	background: var(--color-background-offwhite, #faf8f5);
+	clip-path: polygon(
+		var(--c) 0%,
+		calc(100% - var(--c)) 0%,
+		100% var(--c),
+		100% calc(100% - var(--c)),
+		calc(100% - var(--c)) 100%,
+		var(--c) 100%,
+		0% calc(100% - var(--c)),
+		0% var(--c)
+	);
+	/* Subtle dark purple drop shadow to feel like a cut-out */
+	box-shadow: 0 4px 10px rgba(101,79,132,0.10), 0 1px 3px rgba(101,79,132,0.14);
+}
+
+.img-frame::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	/* Straight-edge frame using 4 side gradients (purple) */
+	background:
+		linear-gradient(var(--edge), var(--edge)) top/100% var(--b) no-repeat,
+		linear-gradient(var(--edge), var(--edge)) bottom/100% var(--b) no-repeat,
+		linear-gradient(var(--edge), var(--edge)) left/var(--b) 100% no-repeat,
+		linear-gradient(var(--edge), var(--edge)) right/var(--b) 100% no-repeat;
+	clip-path: inherit;
+}
+
+.img-frame::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	/* Subtle chamfer accents using inner shadows at corners (pink) */
+	box-shadow:
+		inset var(--b) var(--b) 0 0 var(--chamfer),
+		inset calc(-1*var(--b)) calc(-1*var(--b)) 0 0 var(--chamfer);
+	/* Keep effect light */
+	opacity: 0.8;
+	clip-path: inherit;
+}
+
+.img-media {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain; /* scale down proportionally, no cropping */
+	background: transparent;
+}
+
+/* Aspect + size presets */
+.img-rect-s { aspect-ratio: 16 / 9; max-width: 320px; }
+.img-rect-m { aspect-ratio: 16 / 9; max-width: 560px; }
+.img-rect-l { aspect-ratio: 16 / 9; max-width: 800px; }
+
+.img-square-s { aspect-ratio: 1 / 1; max-width: 240px; }
+.img-square-m { aspect-ratio: 1 / 1; max-width: 360px; }
+.img-square-l { aspect-ratio: 1 / 1; max-width: 480px; }
+
+/* Let frames expand to container width on small screens */
+@media (max-width: 767px) {
+	.img-rect-s, .img-rect-m, .img-rect-l,
+	.img-square-s, .img-square-m, .img-square-l {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/* Slightly increase chamfer on desktop for presence, still light */
+@media (min-width: 1024px) {
+	.img-frame { --c: 10px; }
+}
+
+/* Slightly increase safe outer spacing on tablet+ */
+@media (min-width: 768px) {
+	.img-frame { margin: 1rem 0 1.25rem; }
+}
+
+/* Editor block responsive two-column layout */
+@media (min-width: 768px) {
+	.editor-block {
+		grid-template-columns: 1fr 420px; /* text + medium image column */
+	}
+}
+
+/* Ensure "special" heading treatments are only for page headings.
+   Regular headings in review/podcast content should be plain but branded. */
+.page-header .page-title { /* keep special page heading styles */ }
+.page-title-bg::before { /* keep ghosted background title */ }
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	font-family: var(--font-heading, 'Bebas Neue', ui-sans-serif, system-ui, sans-serif) !important;
+	color: var(--color-purple-darkest, #654f84) !important;
+	text-transform: none;
+	letter-spacing: normal;
+	background: none;
+	box-shadow: none;
+	border: 0;
+}

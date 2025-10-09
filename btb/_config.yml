@@ -1,0 +1,33 @@
+title: Behind The Beat
+description: Heartfelt Reviews & Introspective Interviews.
+url: ""
+baseurl: ""
+permalink: pretty
+markdown: kramdown
+
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:path/
+  podcasts:
+    output: true
+    permalink: /podcasts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: reviews
+    values:
+      layout: entry
+  - scope:
+      path: ""
+      type: podcasts
+    values:
+      layout: entry
+
+exclude:
+  - node_modules
+  - theme.zip
+  - README.md
+  - PROJECT_BRIEF.md
+
