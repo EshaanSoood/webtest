@@ -198,7 +198,8 @@ margin: 0rem !important;
 .contact19_media-link {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     color: inherit;
     text-decoration: none;
 }
@@ -208,7 +209,10 @@ margin: 0rem !important;
 .contact19_mask-icon {
     width: 100%;
     height: 100%;
+    display: block;
     background-color: currentColor;
+    -webkit-mask-type: luminance;
+    mask-type: luminance;
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
@@ -593,21 +597,23 @@ margin: 0rem !important;
                   <div class="contact19_item">
                     <a href="https://music.apple.com/us/album/the-sonic-alchemists-i-dream-river/1837469371" target="_blank" rel="noopener" class="contact19_media-link">
                       <div class="contact19_icon-wrapper">
-                        <div class="contact19_mask-icon applemusic"></div>
+                        <div class="icon-embed-medium">
+                          <span class="contact19_mask-icon applemusic" aria-hidden="true"></span>
+                        </div>
                       </div>
                       <div class="spacer-small"></div>
                       <h3 class="heading-style-h5">Apple Music</h3>
-                      <div class="spacer-xsmall"></div>
                     </a>
                   </div>
                   <div class="contact19_item">
                     <a href="https://open.spotify.com/album/1Tjrceud212g5KUcZ37Y1U?si=5mv8r-KmSKqcbuYmBVyxWw" target="_blank" rel="noopener" class="contact19_media-link">
                       <div class="contact19_icon-wrapper">
-                        <div class="contact19_mask-icon spotify"></div>
+                        <div class="icon-embed-medium">
+                          <span class="contact19_mask-icon spotify" aria-hidden="true"></span>
+                        </div>
                       </div>
                       <div class="spacer-small"></div>
                       <h3 class="heading-style-h5">Spotify</h3>
-                      <div class="spacer-xsmall"></div>
                     </a>
                   </div>
                 </div>
