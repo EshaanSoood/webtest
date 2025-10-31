@@ -195,6 +195,35 @@ margin: 0rem !important;
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
+.contact19_media-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    text-decoration: none;
+}
+.contact19_media-link:hover {
+    opacity: 0.9;
+}
+.contact19_mask-icon {
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+.contact19_mask-icon.applemusic {
+    -webkit-mask-image: url('images/applemusic.png');
+    mask-image: url('images/applemusic.png');
+}
+.contact19_mask-icon.spotify {
+    -webkit-mask-image: url('images/spotify.png');
+    mask-image: url('images/spotify.png');
+}
 </style>
     </div>
     <div data-animation="default" class="navbar1_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="26d0a507-c96c-5c21-5d1d-354b2adb0743" role="banner" data-duration="400">
@@ -560,6 +589,26 @@ margin: 0rem !important;
                     <h3 class="heading-style-h5">youtube</h3>
                     <div class="spacer-xsmall"></div>
                     <a href="#" class="text-style-link">https://www.youtube.com/<br>@EshaanSoood</a>
+                  </div>
+                  <div class="contact19_item">
+                    <a href="https://music.apple.com/us/album/the-sonic-alchemists-i-dream-river/1837469371" target="_blank" rel="noopener" class="contact19_media-link">
+                      <div class="contact19_icon-wrapper">
+                        <div class="contact19_mask-icon applemusic"></div>
+                      </div>
+                      <div class="spacer-small"></div>
+                      <h3 class="heading-style-h5">Apple Music</h3>
+                      <div class="spacer-xsmall"></div>
+                    </a>
+                  </div>
+                  <div class="contact19_item">
+                    <a href="https://open.spotify.com/album/1Tjrceud212g5KUcZ37Y1U?si=5mv8r-KmSKqcbuYmBVyxWw" target="_blank" rel="noopener" class="contact19_media-link">
+                      <div class="contact19_icon-wrapper">
+                        <div class="contact19_mask-icon spotify"></div>
+                      </div>
+                      <div class="spacer-small"></div>
+                      <h3 class="heading-style-h5">Spotify</h3>
+                      <div class="spacer-xsmall"></div>
+                    </a>
                   </div>
                 </div>
               </div>
